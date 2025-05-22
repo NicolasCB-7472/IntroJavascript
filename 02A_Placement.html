@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title> Javascript - 01&02 Placement</title>
+    <!-- Internal script usually goes before /body -->
+    <!-- For external with the proper tags, preferable to do it externally -->
+    <script type="text/javascript" src="02B_catage.js"></script>
+    <script>
+        function cyears(form) {
+            form.dogage.value = form.myage.value * 7;
+        }
+
+    </script>
+</head>
+
+<body>
+    <b> Find out your age in dog years! </b>
+    <form method="post">
+        <table>
+            <tr>
+                <td> Enter your age</td>
+                <td><input type="text" name="myage" size=15></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="calculate" onclick="cyears(this.form)"></td>
+            </tr>
+            <tr>
+                <td> Your age in dog years is:</td>
+                <td><input type="text" name="dogage" size=15</td>
+            </tr>
+        </table>
+    </form>
+
+    <b> Find out your age in cat years! </b>
+    <form method="post">
+        <table>
+            <tr>
+                <td> Enter your age</td>
+                <td><input type="text" name="myage2" size=15></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="calculate" onclick="catyears(this.form)"></td>
+            </tr>
+            <tr>
+                <td> Your age in dog years is:</td>
+                <td><input type="text" name="catage" size=15</td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
